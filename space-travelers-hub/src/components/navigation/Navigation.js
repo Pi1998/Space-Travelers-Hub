@@ -3,16 +3,15 @@ import { NavLink } from 'react-router-dom';
 import logoImage from '../../icon/planet.png';
 import './navigation.css';
 
-
-const Navigation = () => {
+function Navigation() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <div className="logo">
-        <img src={logoImage} alt="Logo" />
+          <img src={logoImage} alt="Logo" />
         </div>
         <div className="site-name">
-          <h2>Space Travelers' Hub</h2>
+          <h2>Space Travelers`&apos;` Hub</h2>
         </div>
       </div>
       <div className="navbar-right">
@@ -39,6 +38,6 @@ const Navigation = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navigation;

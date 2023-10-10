@@ -6,7 +6,7 @@ import MyProfile from './components/myProfile/MyProfile';
 import Navigation from './components/navigation/Navigation';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <div className="App">
@@ -19,6 +19,6 @@ const App = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default App;
