@@ -1,0 +1,27 @@
+.rockets-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rocket-item {
+    display: flex;
+    padding: 2% 5%;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .rocket-image {
+    width: 90%; 
+  }
+  
+  .rocket-info {
+    flex: 2;
+    padding: 0 20px;
+  }
+
+  .rocket-info h3 {
+    padding-bottom: 10px;
+  }
+  
