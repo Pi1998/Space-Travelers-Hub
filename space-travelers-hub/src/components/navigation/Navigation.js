@@ -11,7 +11,7 @@ function Navigation() {
           <img src={logoImage} alt="Logo" />
         </div>
         <div className="site-name">
-          <h2>Space Travelers`&apos;` Hub</h2>
+          <h2>Space Travelers&apos; Hub</h2>
         </div>
       </div>
       <div className="navbar-right">
