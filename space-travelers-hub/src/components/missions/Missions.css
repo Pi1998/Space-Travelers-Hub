@@ -1,0 +1,49 @@
+.mission-table {
+  text-align: left;
+  margin: 20px auto;
+  width: 90%;
+  border: 0.5px solid gray;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+td,
+th {
+  border: 0.5px solid gray;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(221, 221, 221, 0.578);
+}
+
+.status {
+  padding: 20px;
+}
+
+.not-memeber {
+  background-color: gray;
+  color: white;
+  font-size: 0.8rem;
+  padding: 3px 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btns-col {
+  position: relative;
+}
+
+.action-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+}
