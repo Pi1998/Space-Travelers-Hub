@@ -54,9 +54,9 @@ const Rockets = () => {
               {rocket.reserved ? rocket.description : rocket.description}
             </p>
             {rocket.reserved ? (
-              <button type="button" onClick={() => handleCancelReservation(rocket.id)}>Cancel Reservation</button>
+              <button type="button" className="cancel-btn" onClick={() => handleCancelReservation(rocket.id)}>Cancel Reservation</button>
             ) : (
-              <button type="button" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>
+              <button type="button" className="reserve-btn" onClick={() => handleReserveRocket(rocket.id)}>Reserve Rocket</button>
             )}
           </div>
         </div>
