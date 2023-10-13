@@ -12,19 +12,19 @@ const MyProfile = () => {
 
   return (
     <div className="profile-container">
-      <div className="column">
-        <h2>Reserved Rockets</h2>
-        <ul>
-          {reservedRockets.map((rocket) => (
-            <li key={rocket.id}>{rocket.name}</li>
-          ))}
-        </ul>
-      </div>
-      <div className="column">
-        <h2>Joined Missions</h2>
+      <div className="mission-column">
+        <h2>My Missions</h2>
         <ul>
           {joinedMissions.map((mission) => (
             <li key={mission.mission_id}>{mission.mission_name}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="rocket-column">
+        <h2>My Rockets</h2>
+        <ul>
+          {reservedRockets.map((rocket) => (
+            <li key={rocket.id}>{rocket.name}</li>
           ))}
         </ul>
       </div>
