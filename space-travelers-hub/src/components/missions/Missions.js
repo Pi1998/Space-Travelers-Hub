@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../../missions/missionsSlice';
+import { cancelMission, fetchMissions, joinMission } from '../../missions/missionsSlice';
 import './Missions.css';
 
 const Missions = () => {
@@ -12,12 +12,7 @@ const Missions = () => {
   return (
     <div>
       {mission.loading && <div>Loading...</div>}
-      {!mission.loading && (
-      <div>
-        Error:
-        {mission.error}
-      </div>
-      )}
+      {!mission.loading && <div>{mission.error}</div>}
       {!mission.loading && mission.missions.length ? (
         <table className="mission-table">
           <thead className="table-head">
@@ -33,8 +28,8 @@ const Missions = () => {
                 <td className="status">{mission.mission_join ? <p className="active-member">Active Member</p> : <p className="not-memeber">NOT A MEMEBER</p> }</td>
                 <td className="btns-col">
                   {mission.mission_join
-                    ? <button className="leave-btn" type="button">Leave Mission</button>
-                    : <button className="join-btn" type="button">Join Mission</button>}
+                    ? <button className="leave-btn" type="button" onClick={() => dispatch(joinMission(mission.mission_id))}>Leave Mission</button>
+                    : <button className="join-btn" type="button" onClick={() => dispatch(cancelMission(mission.mission_id))}>Join Mission</button>}
                 </td>
               </tr>
             ))}
