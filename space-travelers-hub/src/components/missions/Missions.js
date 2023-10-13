@@ -12,12 +12,7 @@ const Missions = () => {
   return (
     <div>
       {mission.loading && <div>Loading...</div>}
-      {!mission.loading && (
-      <div>
-        Error:
-        {mission.error}
-      </div>
-      )}
+      {!mission.loading && <div>{mission.error}</div>}
       {!mission.loading && mission.missions.length ? (
         <table className="mission-table">
           <thead className="table-head">
