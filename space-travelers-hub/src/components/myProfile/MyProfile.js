@@ -10,11 +10,11 @@ const MyProfile = () => {
   return (
     <div className="profile-container">
       <MyMissions />
-      <div className="rocket-container">
-        <h2 className="title">My Rockets</h2>
-        <ul className="rockets-list">
+      <div className="rocket-column">
+        <h2>My Rockets</h2>
+        <ul>
           {reservedRockets.map((rocket) => (
-            <li className="rocket" key={rocket.id}>{rocket.name}</li>
+            <li key={rocket.id}>{rocket.name}</li>
           ))}
         </ul>
       </div>
