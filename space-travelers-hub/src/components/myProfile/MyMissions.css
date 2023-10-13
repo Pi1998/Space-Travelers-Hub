@@ -1,0 +1,26 @@
+.title{
+    margin-bottom: 20px;
+}
+
+.missions-container{
+    margin: 20px;
+    width: 50%;
+}
+
+.missions-list{
+    width: 100%;
+    border-radius: 7px;
+    border: 0.5px solid rgb(72, 72, 72);
+    list-style: none;
+}
+
+.mission{
+    border-bottom: 0.5px solid rgb(72, 72, 72);
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.mission:last-child{
+    border: none;
+}
