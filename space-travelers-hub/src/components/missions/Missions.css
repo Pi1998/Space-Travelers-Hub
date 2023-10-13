@@ -14,15 +14,14 @@ th {
 }
 
 tr:nth-child(odd) {
-  background-color: rgba(221, 221, 221, 0.578);
+  background-color: #F2F2F2;
 }
 
 .status {
   padding: 20px;
 }
 
-.not-memeber {
-  background-color: gray;
+.not-memeber, .active-member {
   color: white;
   font-size: 0.8rem;
   padding: 3px 5px;
@@ -30,13 +29,23 @@ tr:nth-child(odd) {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-weight: bold;
+}
+
+.not-memeber{
+    background-color: #6D767E;
+}
+
+.active-member{
+    background-color: #1AA2B9;
+    font-size: 0.9rem;
 }
 
 .btns-col {
   position: relative;
 }
 
-.action-btn {
+.leave-btn, .join-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,4 +55,10 @@ tr:nth-child(odd) {
   border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.leave-btn{
+    border-color: red;
+    color: red;
+    width: 120px;
 }
