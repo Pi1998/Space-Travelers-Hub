@@ -31,7 +31,7 @@ exports[`matches snapshot 1`] = `
     >
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/rockets"
           onClick={[Function]}
@@ -41,7 +41,7 @@ exports[`matches snapshot 1`] = `
       </li>
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/missions"
           onClick={[Function]}
@@ -56,7 +56,7 @@ exports[`matches snapshot 1`] = `
       </li>
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/myprofile"
           onClick={[Function]}
