@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="profile-container"
+>
+  <div
+    className="missions-container"
+  >
+    <h2
+      className="title"
+    >
+      My Missoins
+    </h2>
+    <ul
+      className="missions-list"
+    />
+  </div>
+  <div
+    className="rocket-column"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul />
+  </div>
+</div>
+`;

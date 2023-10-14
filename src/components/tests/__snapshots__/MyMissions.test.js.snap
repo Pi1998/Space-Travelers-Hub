@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="missions-container"
+>
+  <h2
+    className="title"
+  >
+    My Missoins
+  </h2>
+  <ul
+    className="missions-list"
+  />
+</div>
+`;
