@@ -13,7 +13,15 @@ export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () =>
       throw new Error('Network response was not ok');
     }
     const data = await response.json();
-    return data;
+
+    const filteredData = data.map((rocket) => ({
+      id: rocket.id,
+      name: rocket.name,
+      description: rocket.description,
+      flickr_images: rocket.flickr_images,
+    }));
+
+    return filteredData;
   } catch (error) {
     throw new Error('Error fetching rockets data');
   }
