@@ -17,12 +17,12 @@ function Navigation() {
       <div className="navbar-right">
         <ul className="nav-links">
           <li>
-            <NavLink to="/rockets" activeClassName="active">
+            <NavLink to="/rockets" activeclassname="active">
               Rockets
             </NavLink>
           </li>
           <li>
-            <NavLink to="/missions" activeClassName="active">
+            <NavLink to="/missions" activeclassname="active">
               Missions
             </NavLink>
           </li>
@@ -30,7 +30,7 @@ function Navigation() {
             <div className="vertical-line" />
           </li>
           <li>
-            <NavLink to="/myprofile" activeClassName="active">
+            <NavLink to="/myprofile" activeclassname="active">
               My Profile
             </NavLink>
           </li>
